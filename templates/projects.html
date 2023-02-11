@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joshua Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css')}}">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/c825c2000f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <div class="contact-hero">
+        <nav>
+            <a class="logo" href="{{url_for('home')}}">Joshua.</a>
 
-</body>
-</html>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About Me</a></li>
+                <li><a href="{{url_for('projects')}}">Projects</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+            <!-- <a href="#" class="btn">Subscribe</a> -->
+        </nav>
+    </div>
